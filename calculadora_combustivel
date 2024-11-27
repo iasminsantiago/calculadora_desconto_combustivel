@@ -1,0 +1,27 @@
+# Ler a quantidade de litros vendido e tipo de combustível:
+litros = float(input("informe a quantidade de litros desejada:"))
+tipo_combustivel = input("Informe o tipo de combustível escolhido (E para etanol, D para diesel): ")
+
+# Calcular valor a ser pago por cliente:
+
+# Desconto:
+if tipo_combustivel == "E": # "E é um string... Se eu não colocar aspas, ele entende como variável não definida"
+    preco_litro = 1.70
+    if litros <= 15:
+        desconto = preco_litro*litros*0.02
+    else:
+        desconto = preco_litro*litros*0.04
+
+elif tipo_combustivel == "D":
+    preco_litro = 2
+    if litros <= 15:
+        desconto = preco_litro*litros*0.03
+    else:
+        desconto = preco_litro*litros*0.05
+
+else:
+    print("Entradas inválidas!")
+
+# Valor a ser pago:
+valor = preco_litro*litros - desconto
+print(f'O valor pago pelo cliente será R$ {valor}.')
