@@ -7,3 +7,6 @@ Para o diesel, se a quantidade comprada for até 15 litros, o desconto será de 
 
  🔥O do valor do desconto será a multiplicação entre preço do litro, quantidade de litros e o valor do desconto.
  🔥O valor a ser pago por um cliente será o resultado da multiplicação do preço do litro pela quantidade de litros menos o valor de desconto resultante do cálculo.
+
+
+ref. 3.12 Alura
